@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login - Donation Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <?php include('header.php'); ?>
+    <section class="login-section">
+        <div class="login-box">
+            <h2>User Login</h2>
+            <form action="login.php" method="POST">
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username" required><br><br>
+                
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required><br><br>
+                
+                <button type="submit">Sign In</button>
+            </form>
+            <p>No account? <a href="userreg.php">Create one</a></p>
+        </div>
+    </section>
+</body>
+</html>

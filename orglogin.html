@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organization Login - Donation Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="Donation Portal Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="dashboard.html">My Dashboard</a></li>
+                <li><a href="donate.html">Make a Donation</a></li>
+                <li><a href="whatsnew.html">What's New</a></li>
+                <li class="header-dropdown">
+                    <span class="signin-text">Sign In</span>
+                    <div class="header-dropdown-content">
+                        <a href="userlogin.html">As Donor</a>
+                        <a href="orglogin.html">As Organization</a>
+                    </div>
+                </li>
+                <li>
+                    <form action="search.php" method="GET">
+                        <input type="text" name="search" placeholder="Search for campaigns">
+                        <button type="submit">Search</button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="login-section">
+        <div class="login-box">
+            <h2>Organization Login</h2>
+            <form action="orglogin.php" method="POST">
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username" required><br><br>
+                
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required><br><br>
+                
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="orgreg.html">Register here</a></p>
+        </div>
+    </section>
+</body>
+</html>
